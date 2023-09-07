@@ -5,9 +5,10 @@ import OurPartners from './OurPartners'
 const Landing = () => {
   return (
     <>
-    <NavBar />
+  
     <HeroSection />
-    <OurPartners />
+   <div className='mx-12'> <OurPartners />
+    </div>
     </>
   )
 }
