@@ -1,17 +1,25 @@
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
+import Jobs from "./pages/Jobs";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
-import './App.css'
-import Footer from './components/Footer'
-import Landing from './pages/Landing'
-
-function App() {
-
+export default function App() {
   return (
     <>
-   <Landing  />
-   
- <Footer />
+    
+    <NavBar />
+    <Routes>
+    <Route path="/" element={<Landing />} />
+    <Route path="/jobs" element={<Jobs />} />
+ </Routes>
+
+ <Footer/>
     </>
-  )
+    
+  );
 }
 
-export default App
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
