@@ -9,7 +9,7 @@ import Feature from '../components/Features'
 
 const Landing = () => {
   return (
-<<<<<<< HEAD
+
     <div>
     <NavBar />
     <Welcome />
@@ -19,15 +19,10 @@ const Landing = () => {
     <Feature />
     
     </div>
-=======
-    <>
+
   
-    <HeroSection />
-   <div className='mx-12'> <OurPartners />
-    </div>
-    </>
->>>>>>> dc6136f8094ca4575e659c7caa8229f5210cc4c6
+   
   )
 }
 
-export default Landing
+export default Landing;
